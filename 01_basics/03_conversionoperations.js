@@ -26,3 +26,16 @@ let someNumber=22
 let stringNumber=String(someNumber)
 console.log(stringNumber)
 console.log(typeof(stringNumber))
+
+// *************************** Operations ********************
+// arithmetic operation (+, -, /,*, %, **)
+
+let str1="ali";
+let str2=" liyakat";
+console.log(str1 + str2)    // string concatenation
+
+
+console.log("1" + 2);        // string
+console.log(1 +"2")         //string                {USE PARANTHESIS}
+console.log("1" + 2 + 2);   //string
+console.log(1 + 2+ "2");    // first adds numbers then string
