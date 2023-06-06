@@ -24,3 +24,29 @@ let myObj = {
 const myFunction = function(){
     console.log("hello");
 }
+
+
+
+
+//   ****************************  MEMORY  *****************************************************
+//       Stack (primitive),     Heap(Non-primitive)
+
+let myName="ali"
+let anotherName=myName;     // creates a copy
+anotherName="liyakat";
+
+console.log(myName)
+console.log(anotherName);
+
+
+
+let user1={
+    name: 'ali',
+    age: 22
+}
+
+let user2=user1;
+
+user2.age=23;               // changes are made in same reference memory.
+console.log(user1.age);
+console.log(user2.age);
