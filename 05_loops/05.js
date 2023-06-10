@@ -1,4 +1,4 @@
-//   FOR EACH LOOP
+//   FOR EACH LOOP      returns undefined.
 
 const code = ["c","cpp","java","js"]
 code.forEach(function (item){   // callback function
