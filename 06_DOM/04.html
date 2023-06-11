@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="lang">
+        <li>javascript</li>
+    </ul>
+
+
+    <script>
+        function addItem(lang){
+            const li = document.createElement('li')
+            li.innerHTML = `${lang}`
+            document.querySelector('.lang').appendChild(li) // full tree traversal
+        }
+        addItem('java')
+
+        function addLang(lang){
+            const li = document.createElement('li')
+            li.appendChild(document.createTextNode(lang))   // optimized
+            document.querySelector('.lang').appendChild(li)
+        }
+        addLang('Python')
+
+
+        //  Edit the elements
+        const item2 = document.querySelector("li:nth-child(2)")
+        // item2.innerHTML = "Typescript"
+        const newli = document.createElement('li')
+        newli.textContent = "Mojo"
+        item2.replaceWith(newli)
+
+        const item1 = document.querySelector('li:first-child')
+        item1.outerHTML = '<li>CPP</li>'
+
+        //   Remove element
+        const item3 = document.querySelector("li:last-child")
+        item3.remove()
+
+
+    </script>
+</body>
+</html>
